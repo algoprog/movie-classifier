@@ -5,9 +5,9 @@ import random
 import keras
 
 import numpy as np
+
 from flask import Flask, request, json
 from flask_cors import CORS
-
 from keras import Input, Model
 from keras.layers import Embedding, Bidirectional, LSTM, Dense, Concatenate
 from keras_preprocessing.sequence import pad_sequences
