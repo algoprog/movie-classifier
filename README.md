@@ -1,4 +1,5 @@
 # Movie Classifier
+This is a simple implementation of a multi-class multi-label movie classifier based on a title and a description. We used the Keras framework for buildding and training the model. The model we used consists of two BiLSTMs that learn representations for the titles and the descriptions, concatenates them and gives probabilities for the different genres using a dense layer with sigmoid activation. We initialized a shared embedding layer with pre-trained word embeddings from the GloVe model to boost the metrics of the model. We used binary cross entropy loss, since we have multi-label classification and we want to optimize the outputs independently.
 
 # Installation
 Install the dependencies using pip:
@@ -6,7 +7,7 @@ Install the dependencies using pip:
 
 # Training
 1. Download the dataset from [here](https://www.kaggle.com/rounakbanik/the-movies-dataset/version/7#movies_metadata.csv) and put the csv file in the dataset folder.
-2. Download the pre-trained word embeddings from [here]() and put the txt file in the dataset folder.
+2. Download the pre-trained word embeddings from [here](http://nlp.stanford.edu/data/glove.6B.zip) and put the txt file in the dataset folder.
 3. Run: `python model.py --mode train --model_path model --embeddings_size 100 --max_length 128`
 
 # Inference
