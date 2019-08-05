@@ -16,6 +16,17 @@ Install the dependencies using pip:
 Output:
 `[('Action', 0.7449887), ('Thriller', 0.6140004), ('Crime', 0.4795791), ('Comedy', 0.4772842)]`
 
+# Serving
+If you want to run a Flask web API for the model:
+
+`python model.py --mode serve --port 9000`
+
+and then to get results: http://127.0.0.1:9000/classify?title=Inception&description=Dom%20Cobb%20is%20a%20thief...
+
+Output:
+
+`{"genres": [["Action", 0.7449886798858643], ["Thriller", 0.6140003800392151], ["Crime", 0.4795790910720825], ["Comedy", 0.47728419303894043]]}`
+
 # Evaluation
 
 |label|precision|recall|F1|support|
