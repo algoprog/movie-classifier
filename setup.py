@@ -11,7 +11,7 @@ setup(
 	'Keras_Preprocessing==1.0.9',
 	'Flask_Cors==3.0.6',
 	'Flask==1.0.2',
-	'numpy==1.16.3',
+	'numpy==1.22.0',
 	'texttable==1.6.2',
 	'scikit_learn==0.21.3'
 	]
